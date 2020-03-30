@@ -70,7 +70,7 @@ public class AppApplication {
 	// Creation de message de Sonia
 	@Bean
 	CommandLineRunner testenregistreMessageValentin(MessageRepository msg){	
-		return args->msg.save(new Message(2L, new Date(),"Sonia Valentin","Je suis Sonia, et je vais mettre tout en œuvre pour vous aider avec mon colague mohamed. Quel est le modèle de votre téléphone ?", Canal.Mail,new DossierClient(1L)));
+		return args->msg.save(new Message(2L, new Date(),"Sonia Valentin","Je suis Sonia, et je vais mettre tout en œuvre pour vous aider. Quel est le modèle de votre téléphone ?", Canal.Mail,new DossierClient(1L)));
 	}
 
 
